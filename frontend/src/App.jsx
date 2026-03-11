@@ -14,7 +14,7 @@ function App() {
   async function gerarConteudo() {
     try {
       setLoading(true);
-      const resposta = await fetch("https://site-teste-ia.onrender.com", {
+      const resposta = await fetch("https://site-teste-ia.onrender.com/gerar", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
