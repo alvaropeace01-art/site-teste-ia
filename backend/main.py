@@ -66,7 +66,7 @@ Descrição visual:
 
     # gerar texto
     resposta_texto = client.models.generate_content(
-        model="gemini-2.5-flash",
+        model="gemini-1.5-flash",
         contents=prompt_txt
     )
 
@@ -77,7 +77,7 @@ Descrição visual:
     # gerar imagem apenas se usuário pedir
     if dados.imagem:
         resposta_imagem = client.models.generate_content(
-            model="gemini-2.5-flash",
+            model="gemini-1.5-flash",
             contents=f"Descreva uma imagem profissional baseada nisso: {prompt_imagem}"
         )
 
